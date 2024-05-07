@@ -5,10 +5,10 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "28536138")  # ⚠️ Required
-    API_HASH  = os.environ.get("API_HASH", "aaa6a5e298c71fa3a576a88b1a4c2b9b") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6830166477:AAE-V5K3P3AS84WVtuXTrAqrsBV8nkG-eMs") # ⚠️ Required
-    FORCE_SUB = os.environ.get('FORCE_SUB', 'thinkbyit') # ⚠️ Required
+    API_ID    = os.environ.get("API_ID", "22597714")  # ⚠️ Required
+    API_HASH  = os.environ.get("API_HASH", "f2efb32f90649c5127a071936ad15df0") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6830166477:AAHngNuJ-VCRTLe9upoy307tvUqdRxsCyro") # ⚠️ Required
+    FORCE_SUB = os.environ.get('FORCE_SUB', '-1002020056630') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
@@ -28,13 +28,13 @@ class Config(object):
 
 
     caption = """
-**File Name**: {0}
+File Name: {0}
 
-**Original File Size:** {1}
-**Encoded File Size:** {2}
-**Compression Percentage:** {3}
+Original File Size: {1}
+Encoded File Size: {2}
+Compression Percentage: {3}
 
-__Downloaded in {4}__
-__Encoded in {5}__
-__Uploaded in {6}__
+Downloaded in {4}
+Encoded in {5}
+Uploaded in {6}
 """
