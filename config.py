@@ -7,7 +7,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "29023986")  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "895fde5d06418650fdcce2fddebe8276") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6830166477:AAHngNuJ-VCRTLe9upoy307tvUqdRxsCyro") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6502715364:AAE-EDHT0Vw-rqXnmHifyrvNkWJ7PNYidgg") # ⚠️ Required
     FORCE_SUB = os.environ.get('FORCE_SUB', '-1002020056630') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
@@ -17,7 +17,7 @@ class Config(object):
     DB_NAME  = os.environ.get("DB_NAME","SnowEncoderBot") 
 
     # Other Configs 
-    ADMIN = int(os.environ.get("ADMIN", "6204193689")) # ⚠️ Required
+    ADMIN = int(os.environ.get("ADMIN", "6756781098")) # ⚠️ Required
     LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1001956404845')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/28a6eaa080f619c8d55cf.jpg")
